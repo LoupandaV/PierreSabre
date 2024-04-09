@@ -3,8 +3,11 @@ package personnages;
 public class Humain {
 	private String nom;
 	private String boisson;
-	protected int argent;
+	private int argent;
 	private String bien;
+	protected int nbConnaissance=0;
+	protected Humain[] memeoire;
+	
 	
 	public Humain(String nom,String boisson,int argent) {
 		this.nom=nom;
@@ -17,6 +20,11 @@ public class Humain {
 	}
 	public int getArgent() {
 		return argent;
+	}
+	
+	protected void parler(String texte){
+		System.out.println('('+nom+") - "+texte);
+		
 	}
 	
 	public void direBonjour() {
@@ -48,21 +56,23 @@ public class Humain {
 		argent-=perte;
 	}
 	
-	protected void parler(String texte){
-		System.out.println('('+nom+") - "+texte);
+	
+	
+	public void faireConnaissanceAvec(Humain autreHumain){
 		
 	}
-
-
-
-
-
-
-
-
-
-
-
+	
+	private void memoriser(Humain humain) {
+		
+	}
+	
+	private void repondre(Humain humain) {
+		
+	}
+	
+	public void listerConnaissance() {
+		
+	}
 
 
 
