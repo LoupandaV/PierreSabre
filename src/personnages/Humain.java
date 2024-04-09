@@ -44,7 +44,7 @@ public class Humain {
 		argent+=gain;
 	}
 	
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		argent-=perte;
 	}
 	
